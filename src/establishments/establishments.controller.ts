@@ -7,6 +7,7 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
+import { ApiBody } from '@nestjs/swagger';
 import { EstablishmentsService } from './establishments.service';
 import { CreateEstablishmentDto } from './dto/create-establishment.dto';
 import { UpdateEstablishmentDto } from './dto/update-establishment.dto';
@@ -16,6 +17,7 @@ export class EstablishmentsController {
   constructor(private readonly establishmentsService: EstablishmentsService) {}
 
   @Post()
+  @ApiBody({ type: CreateEstablishmentDto })
   create(@Body() createEstablishmentDto: CreateEstablishmentDto) {
     return this.establishmentsService.create(createEstablishmentDto);
   }

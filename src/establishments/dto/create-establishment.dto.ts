@@ -1,4 +1,8 @@
+import { ApiProperty } from '@nestjs/swagger';
 export class CreateEstablishmentDto {
-  nome: string;
+  @ApiProperty()
+  name: string;
+
+  @ApiProperty()
   cnpj: string;
 }
