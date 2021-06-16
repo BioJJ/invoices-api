@@ -33,6 +33,7 @@ export class EstablishmentsController {
   }
 
   @Patch(':id')
+  @ApiBody({ type: CreateEstablishmentDto })
   update(
     @Param('id') id: string,
     @Body() updateEstablishmentDto: UpdateEstablishmentDto,
