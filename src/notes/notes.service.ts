@@ -14,15 +14,15 @@ export class NotesService {
   }
 
   findAll() {
-    return this.noteModel.find();
+    return this.noteModel.find().populate('establishment');
   }
 
   findOne(id: string) {
-    return this.noteModel.findById(id);
+    return this.noteModel.findById(id).populate('establishment');
   }
 
   update(id: string, updateNoteDto: UpdateNoteDto) {
-    return this.noteModel.findByIdAndUpdate(
+    return this.noteModel.findOneAndUpdate(
       {
         _id: id,
       },
