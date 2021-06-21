@@ -22,9 +22,16 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+# Invoices-api
+
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Aplicação para cadastramento de notas fiscais e cálculo de
+impostos
+
+### WEB Repository
+
+See [Invoices-web](https://github.com/BioJJ/invoices-web).
 
 ## Installation
 
@@ -64,9 +71,9 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Jefferson Coelho](https://www.linkedin.com/in/jefferson-coelho/)
+- Website - [GitHub BIOJJ](https://github.com/BioJJ)
+- Twitter - [@Bio_jefferson](https://twitter.com/bio_jefferson)
 
 ## License
 
